@@ -1,0 +1,35 @@
+# The interval (in minutes) at which the weather changes randomly
+change-interval: 10
+
+# Weather types that can occur
+weather-options:
+  - clear
+  - rain
+  - thunderstorm
+
+# Duration (in minutes) for each weather type
+weather-duration:
+  clear: 10
+  rain: 15
+  thunderstorm: 5
+
+# Whether lightning strikes every tick during thunderstorms
+lightning-strike-every-tick: true
+
+# The amount of damage lightning causes to entities in the strike area
+lightning-damage: 5
+
+# Whether to play thunder sound effects during lightning strikes
+play-thunder-sound: true
+
+# Whether to darken the sky during thunderstorms
+darken-sky: true
+
+# Whether to spawn falling debris during thunderstorms
+falling-debris: true
+
+# Whether to broadcast a storm warning to players
+storm-warning: true
+
+# Whether lightning strikes can chain to nearby locations
+chain-lightning: true
