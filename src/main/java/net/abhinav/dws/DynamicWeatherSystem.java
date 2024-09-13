@@ -135,12 +135,13 @@ public final class DynamicWeatherSystem extends JavaPlugin {
                 double yOffset = random.nextDouble() * 2;
                 double zOffset = random.nextDouble() * 2 - 1;
                 Location particleLocation = location.clone().add(xOffset, yOffset, zOffset);
-                particleLocation.getWorld().spawnParticle(Particle.BLOCK_DUST, particleLocation, 10, Material.DIRT.createBlockData());
+                particleLocation.getWorld().spawnParticle(Particle.LARGE_SMOKE, particleLocation, 10, 0.5, 0.5, 0.5, 0.1);
                 // Example collision effect
                 particleLocation.getWorld().playSound(particleLocation, Sound.BLOCK_GRAVEL_PLACE, 1.0f, 1.0f);
             }
         }, 0L);
     }
+
 
     private void chainLightning(org.bukkit.World world, Location location) {
         if (config.getBoolean("chain-lightning", false)) {
